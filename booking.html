@@ -21,97 +21,146 @@
         <img src="room2.webp" alt="Suite Room">
         <h4>Suite Room</h4>
       </div>
+      
     </div>
 
     <!-- Booking Form -->
-    <form class="booking-form">
-      <!-- Personal Information -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" required>
-        </div>
-        <div class="form-group">
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="pincode">Pincode</label>
-          <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="560001" required>
-        </div>
-        <div class="form-group">
-          <label for="state">State</label>
-          <input type="text" id="state" name="state" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="city">City</label>
-          <input type="text" id="city" name="city" required>
-        </div>
-      </div>
-
-      <!-- Modified Booking Details -->
-      <div class="form-row">
-        <div class="form-group">
-          <label for="checkin-display">Check-in</label>
-          <!-- This is the visible input the user sees -->
-          <input type="text" id="checkin-display" placeholder="YYYY DD MM" readonly class="date-display-input">
-          <!-- This is the hidden input with the actual calendar -->
-          <input type="date" id="checkin" name="checkin" class="hidden-date-input" data-target="checkin-display" required>
-        </div>
-        <div class="form-group">
-          <label for="checkout-display">Check-out</label>
-          <!-- This is the visible input the user sees -->
-          <input type="text" id="checkout-display" placeholder="YYYY DD MM" readonly class="date-display-input">
-          <!-- This is the hidden input with the actual calendar -->
-          <input type="date" id="checkout" name="checkout" class="hidden-date-input" data-target="checkout-display" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label for="guests">Guests</label>
-          <select id="guests" name="guests" required>
-            <option value="" disabled selected>Select guests</option>
-            <option value="1">1 Guest</option>
-            <option value="2">2 Guests</option>
-            <option value="3">3 Guests</option>
-            <option value="4">4 Guests</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="room">Room Type</label>
-          <select id="room" name="room" required>
-            <option value="" disabled selected>Select room</option>
-            <option value="deluxe">Deluxe</option>
-            <option value="suite">Suite</option>
-          </select>
-        </div>
-      </div>
-
-      <button type="submit" class="book-btn">Check Availability</button>
-    </form>
+  <!-- Booking Form -->
+<form class="booking-form">
+  <!-- Personal Information -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" required>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" required>
+    </div>
   </div>
- </section>
 
- <!-- Add this JavaScript right before the closing </body> tag -->
- <script src="booking.js"></script>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+  </div>
 
+  <div class="form-row">
+    <div class="form-group">
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="560001" required>
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required>
+    </div>
+  </div>
+
+  <!-- Existing Booking Details -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin" name="checkin" required>
+    </div>
+    <div class="form-group">
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout" name="checkout" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="guests">Guests</label>
+      <select id="guests" name="guests" required>
+        <option value="" disabled selected>Select guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="room">Room Type</label>
+      <select id="room" name="room" required>
+        <option value="" disabled selected>Select room</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="suite">Suite</option>
+      </select>
+    </div>
+  </div>
+
+  <button type="submit" class="book-btn">Check Availability</button>
+</form>
+
+
+       
 </body>
+
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all the visible date display inputs
+    const dateDisplayInputs = document.querySelectorAll('.date-display-input');
+
+    // Add a click event to each visible input
+    dateDisplayInputs.forEach(input => {
+      input.addEventListener('click', function() {
+        // Find the corresponding hidden date input and open its calendar
+        const targetId = this.id.replace('-display', '');
+        const hiddenDateInput = document.getElementById(targetId);
+
+        // Use showPicker() to programmatically open the calendar view
+        if (hiddenDateInput) {
+          try {
+            hiddenDateInput.showPicker();
+          } catch (error) {
+            // Fallback for older browsers
+            console.error("showPicker() is not supported by this browser.", error);
+          }
+        }
+      });
+    });
+
+    // Find all the hidden date inputs
+    const hiddenDateInputs = document.querySelectorAll('.hidden-date-input');
+
+    // Add a change event to each hidden input
+    hiddenDateInputs.forEach(hiddenInput => {
+      hiddenInput.addEventListener('change', function() {
+        // Get the ID of the visible input this should update
+        const targetDisplayId = this.dataset.target;
+        const displayInput = document.getElementById(targetDisplayId);
+
+        // Check if both the hidden and visible inputs exist
+        if (this.value && displayInput) {
+          // The date value from the input is always "YYYY-MM-DD"
+          const dateValue = this.value;
+
+          // Split the date into parts: [YYYY, MM, DD]
+          const parts = dateValue.split('-');
+          const year = parts[0];
+          const month = parts[1];
+          const day = parts[2];
+
+          // Create the new format "YYYY DD MM"
+          const formattedDate = `${year} ${day} ${month}`;
+
+          // Update the visible input's value
+          displayInput.value = formattedDate;
+        }
+      });
+    });
+  });
+</script>

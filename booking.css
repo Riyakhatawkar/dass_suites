@@ -106,6 +106,7 @@
 .book-btn:hover {
   background-color: #C2181B;
 }
+<<<<<<< HEAD
 /* Add this to your existing booking.css file */
 
 /* Hide the original date input */
@@ -118,6 +119,9 @@
   cursor: pointer;
   background-color: #fff; /* Or your form input background color */
 }
+=======
+
+>>>>>>> 2ffddc019a4185d49a56357a43b40e6679161182
 @media (max-width: 768px) {
   .room-gallery {
     flex-direction: column;
